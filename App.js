@@ -1,14 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Button } from 'react-native';
 
 export default function App() {
+
+  const dongf = () => {
+    console.log('helo akas')
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      <Text>Hello World !!!</Text>
+      <Text>Hello World !!!</Text>
+      <Text>You Are Mine n Bro !!!</Text>
+      <Text>Hello World !!!</Text>
+      <Button onPress={dongf} title='Press Me Now' color='#841584' accessibilityLabel='Learn More about react Native'/>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
+
 }
 
 const styles = StyleSheet.create({
